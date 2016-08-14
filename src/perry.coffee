@@ -15,7 +15,7 @@
 #   hiroshi
 
 module.exports = (robot) ->
-  robot.respond /hello/, (res) ->
+  robot.respond /hello/i, (msg) ->
     msg.send "What's up buddy?"
 
   robot.hear /what do you think?/, (res) ->
